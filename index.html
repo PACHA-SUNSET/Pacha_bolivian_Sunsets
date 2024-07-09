@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacha_bolivian_Sunsets</title>
+    <link rel="icon" href="imagen favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Show Cumpleañero</h1>
+        <div class="formulario">
+            
+            <input type="text" id="nombreMesa" placeholder="Nombre de la Mesa">
+            <button onclick="tomarFoto()">Tomar Foto</button>
+        </div>
+
+        <!-- Elemento de video para la cámara -->
+        <video id="camara" autoplay></video>
+
+        <!-- Elemento de imagen para mostrar la foto tomada -->
+        <img id="foto" alt="Foto tomada">
+        <button id="confirmarFoto" onclick="confirmarFoto()">Confirmar Foto</button>
+
+        <!-- Botón para ver todos los registros -->
+        <button id="verRegistros" onclick="verRegistrosEnNuevaVentana()">Registros de Mesas </button>
+
+        <!-- Dropdown para opciones adicionales -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">...</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a onclick="borrarRegistros()">Borrar Registros</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
